@@ -29,7 +29,7 @@ struct APIHandler {
                     guard let viewController = viewController else {return}
                     DispatchQueue.main.async {
                         // TODO: write Alert
-                        
+                        Alert.noInternetConnection(viewController)
                         alertHasShow = true
                     }
                 }
