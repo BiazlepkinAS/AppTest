@@ -20,6 +20,8 @@
 		09EE734B26695DB500AA3880 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE734A26695DB500AA3880 /* Weather.swift */; };
 		09EE734D266D44C000AA3880 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE734C266D44C000AA3880 /* Constants.swift */; };
 		09EE734F266D45C300AA3880 /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE734E266D45C300AA3880 /* URLBuilder.swift */; };
+		09EE7351266D48D700AA3880 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE7350266D48D700AA3880 /* APIHandler.swift */; };
+		09EE7353266D4BF000AA3880 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE7352266D4BF000AA3880 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		09EE734A26695DB500AA3880 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		09EE734C266D44C000AA3880 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		09EE734E266D45C300AA3880 /* URLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
+		09EE7350266D48D700AA3880 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		09EE7352266D4BF000AA3880 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				09EE734E266D45C300AA3880 /* URLBuilder.swift */,
+				09EE7350266D48D700AA3880 /* APIHandler.swift */,
 			);
 			path = NetworkService;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				09EE734C266D44C000AA3880 /* Constants.swift */,
+				09EE7352266D4BF000AA3880 /* Alert.swift */,
 			);
 			path = "Common files";
 			sourceTree = "<group>";
@@ -327,7 +333,9 @@
 				09EE731126681AC000AA3880 /* AppDelegate.swift in Sources */,
 				09EE734D266D44C000AA3880 /* Constants.swift in Sources */,
 				09EE734F266D45C300AA3880 /* URLBuilder.swift in Sources */,
+				09EE7351266D48D700AA3880 /* APIHandler.swift in Sources */,
 				09EE734B26695DB500AA3880 /* Weather.swift in Sources */,
+				09EE7353266D4BF000AA3880 /* Alert.swift in Sources */,
 				09EE731326681AC000AA3880 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
