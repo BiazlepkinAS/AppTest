@@ -18,6 +18,8 @@
 		09EE73412669523A00AA3880 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE73402669523A00AA3880 /* TodayViewController.swift */; };
 		09EE73432669525600AA3880 /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE73422669525600AA3880 /* ForecastViewController.swift */; };
 		09EE734B26695DB500AA3880 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE734A26695DB500AA3880 /* Weather.swift */; };
+		09EE734D266D44C000AA3880 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE734C266D44C000AA3880 /* Constants.swift */; };
+		09EE734F266D45C300AA3880 /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE734E266D45C300AA3880 /* URLBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		09EE73402669523A00AA3880 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		09EE73422669525600AA3880 /* ForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
 		09EE734A26695DB500AA3880 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		09EE734C266D44C000AA3880 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		09EE734E266D45C300AA3880 /* URLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,7 @@
 		09EE734726695C6D00AA3880 /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
+				09EE734E266D45C300AA3880 /* URLBuilder.swift */,
 			);
 			path = NetworkService;
 			sourceTree = "<group>";
@@ -174,6 +179,7 @@
 		09EE734826695C8900AA3880 /* Common files */ = {
 			isa = PBXGroup;
 			children = (
+				09EE734C266D44C000AA3880 /* Constants.swift */,
 			);
 			path = "Common files";
 			sourceTree = "<group>";
@@ -319,6 +325,8 @@
 				09EE731526681AC000AA3880 /* MainViewController.swift in Sources */,
 				09EE73432669525600AA3880 /* ForecastViewController.swift in Sources */,
 				09EE731126681AC000AA3880 /* AppDelegate.swift in Sources */,
+				09EE734D266D44C000AA3880 /* Constants.swift in Sources */,
+				09EE734F266D45C300AA3880 /* URLBuilder.swift in Sources */,
 				09EE734B26695DB500AA3880 /* Weather.swift in Sources */,
 				09EE731326681AC000AA3880 /* SceneDelegate.swift in Sources */,
 			);
