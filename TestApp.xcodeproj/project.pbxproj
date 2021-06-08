@@ -29,6 +29,9 @@
 		09EE735F266F236400AA3880 /* TemperatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE735E266F236400AA3880 /* TemperatureCell.swift */; };
 		09EE7361266F237800AA3880 /* TemperatureCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE7360266F237800AA3880 /* TemperatureCellModel.swift */; };
 		09EE7363266F24D600AA3880 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE7362266F24D600AA3880 /* ViewModel.swift */; };
+		09EE7365266FF47900AA3880 /* TableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE7364266FF47900AA3880 /* TableViewCellModel.swift */; };
+		09EE7368266FF5AD00AA3880 /* DailyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE7367266FF5AD00AA3880 /* DailyCell.swift */; };
+		09EE736A266FF5C000AA3880 /* DailyCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE7369266FF5C000AA3880 /* DailyCellModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		09EE735E266F236400AA3880 /* TemperatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureCell.swift; sourceTree = "<group>"; };
 		09EE7360266F237800AA3880 /* TemperatureCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureCellModel.swift; sourceTree = "<group>"; };
 		09EE7362266F24D600AA3880 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		09EE7364266FF47900AA3880 /* TableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellModel.swift; sourceTree = "<group>"; };
+		09EE7367266FF5AD00AA3880 /* DailyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCell.swift; sourceTree = "<group>"; };
+		09EE7369266FF5C000AA3880 /* DailyCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCellModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +171,7 @@
 		09EE73442669525E00AA3880 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				09EE7366266FF59A00AA3880 /* Daily */,
 				09EE735D266F234F00AA3880 /* Temperature */,
 				09EE731426681AC000AA3880 /* MainViewController.swift */,
 				09EE73402669523A00AA3880 /* TodayViewController.swift */,
@@ -205,6 +212,7 @@
 				09EE734C266D44C000AA3880 /* Constants.swift */,
 				09EE7352266D4BF000AA3880 /* Alert.swift */,
 				09EE735B266F1CB100AA3880 /* UIView.swift */,
+				09EE7364266FF47900AA3880 /* TableViewCellModel.swift */,
 			);
 			path = "Common files";
 			sourceTree = "<group>";
@@ -232,6 +240,15 @@
 				09EE7360266F237800AA3880 /* TemperatureCellModel.swift */,
 			);
 			path = Temperature;
+			sourceTree = "<group>";
+		};
+		09EE7366266FF59A00AA3880 /* Daily */ = {
+			isa = PBXGroup;
+			children = (
+				09EE7367266FF5AD00AA3880 /* DailyCell.swift */,
+				09EE7369266FF5C000AA3880 /* DailyCellModel.swift */,
+			);
+			path = Daily;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,10 +390,13 @@
 				09EE7363266F24D600AA3880 /* ViewModel.swift in Sources */,
 				09EE7357266D50C200AA3880 /* DataHandler.swift in Sources */,
 				09EE734D266D44C000AA3880 /* Constants.swift in Sources */,
+				09EE7365266FF47900AA3880 /* TableViewCellModel.swift in Sources */,
 				09EE734F266D45C300AA3880 /* URLBuilder.swift in Sources */,
+				09EE736A266FF5C000AA3880 /* DailyCellModel.swift in Sources */,
 				09EE7351266D48D700AA3880 /* APIHandler.swift in Sources */,
 				09EE734B26695DB500AA3880 /* Weather.swift in Sources */,
 				09EE735C266F1CB100AA3880 /* UIView.swift in Sources */,
+				09EE7368266FF5AD00AA3880 /* DailyCell.swift in Sources */,
 				09EE735F266F236400AA3880 /* TemperatureCell.swift in Sources */,
 				09EE7353266D4BF000AA3880 /* Alert.swift in Sources */,
 				09EE731326681AC000AA3880 /* SceneDelegate.swift in Sources */,
