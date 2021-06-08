@@ -26,7 +26,7 @@ struct DataHandler {
             }
         }
     }
-    
+
     static func getWeatherFromCash(completion: @escaping (Weather) -> Void) {
         guard let dataFromFile = Storage.read(fileName: Constants.fileName) else { return }
         
