@@ -32,6 +32,8 @@
 		09EE7365266FF47900AA3880 /* TableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE7364266FF47900AA3880 /* TableViewCellModel.swift */; };
 		09EE7368266FF5AD00AA3880 /* DailyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE7367266FF5AD00AA3880 /* DailyCell.swift */; };
 		09EE736A266FF5C000AA3880 /* DailyCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE7369266FF5C000AA3880 /* DailyCellModel.swift */; };
+		09EE736D266FFF6800AA3880 /* TodayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE736C266FFF6800AA3880 /* TodayCell.swift */; };
+		09EE736F266FFF7600AA3880 /* TodayCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EE736E266FFF7600AA3880 /* TodayCellModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		09EE7364266FF47900AA3880 /* TableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellModel.swift; sourceTree = "<group>"; };
 		09EE7367266FF5AD00AA3880 /* DailyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCell.swift; sourceTree = "<group>"; };
 		09EE7369266FF5C000AA3880 /* DailyCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCellModel.swift; sourceTree = "<group>"; };
+		09EE736C266FFF6800AA3880 /* TodayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCell.swift; sourceTree = "<group>"; };
+		09EE736E266FFF7600AA3880 /* TodayCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCellModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +175,7 @@
 		09EE73442669525E00AA3880 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				09EE736B266FFF5000AA3880 /* TodayWeather */,
 				09EE7366266FF59A00AA3880 /* Daily */,
 				09EE735D266F234F00AA3880 /* Temperature */,
 				09EE731426681AC000AA3880 /* MainViewController.swift */,
@@ -249,6 +254,15 @@
 				09EE7369266FF5C000AA3880 /* DailyCellModel.swift */,
 			);
 			path = Daily;
+			sourceTree = "<group>";
+		};
+		09EE736B266FFF5000AA3880 /* TodayWeather */ = {
+			isa = PBXGroup;
+			children = (
+				09EE736C266FFF6800AA3880 /* TodayCell.swift */,
+				09EE736E266FFF7600AA3880 /* TodayCellModel.swift */,
+			);
+			path = TodayWeather;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,8 +403,10 @@
 				09EE735A266EA45E00AA3880 /* LocationManagerDelegate.swift in Sources */,
 				09EE7363266F24D600AA3880 /* ViewModel.swift in Sources */,
 				09EE7357266D50C200AA3880 /* DataHandler.swift in Sources */,
+				09EE736D266FFF6800AA3880 /* TodayCell.swift in Sources */,
 				09EE734D266D44C000AA3880 /* Constants.swift in Sources */,
 				09EE7365266FF47900AA3880 /* TableViewCellModel.swift in Sources */,
+				09EE736F266FFF7600AA3880 /* TodayCellModel.swift in Sources */,
 				09EE734F266D45C300AA3880 /* URLBuilder.swift in Sources */,
 				09EE736A266FF5C000AA3880 /* DailyCellModel.swift in Sources */,
 				09EE7351266D48D700AA3880 /* APIHandler.swift in Sources */,
