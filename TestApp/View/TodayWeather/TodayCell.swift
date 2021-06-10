@@ -8,6 +8,7 @@ class TodayCell: UITableViewCell {
     var weekDay: String?
     var tempMin: String?
     var tempMax: String?
+    var icon: String?
     
     private let weekDayLabel: UILabel = {
        let label = UILabel()
@@ -43,6 +44,9 @@ class TodayCell: UITableViewCell {
         
         return label
     }()
+    
+    private let weatherImageView = UIImageView()
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         backgroundColor = .clear
@@ -51,6 +55,7 @@ class TodayCell: UITableViewCell {
         
         weekDayLabel.anchor(top: nil, left: leftAnchor, bottom: bottomAnchor, right: nil, paddingTop: 0, paddingLeft: 20, paddingBottom: 5, paddingRight: 0, width: 0, height: 0)
         todayLabel.anchor(top: nil, left: weekDayLabel.rightAnchor, bottom: bottomAnchor, right: nil, paddingTop: 0, paddingLeft: 15, paddingBottom: 5, paddingRight: 0, width: 0, height: 0)
+        weatherImageView.anchor(top: topAnchor, left: todayLabel.rightAnchor, bottom: nil, right: nil, paddingTop: 5, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 40, height: 40)
         tempMinLabel.anchor(top: topAnchor, left: nil, bottom: nil, right: rightAnchor, paddingTop: 5, paddingLeft: 0, paddingBottom: 0, paddingRight: 5, width: 40, height: 40)
         tempMaxLAbel.anchor(top: topAnchor, left: nil, bottom: nil, right: tempMinLabel.leftAnchor, paddingTop: 5, paddingLeft: 0, paddingBottom: 0, paddingRight: 10, width: 404, height: 40)
     
@@ -64,5 +69,8 @@ class TodayCell: UITableViewCell {
         todayLabel.text = "TODAY"
         tempMinLabel.text = tempMin
         tempMaxLAbel.text = tempMax
+        if let icon = icon {
+            weatherImageView.image = UIImage(named: icon)
+        }
     }
 }
