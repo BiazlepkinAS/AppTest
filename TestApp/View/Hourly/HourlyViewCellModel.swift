@@ -1,9 +1,9 @@
 
 import UIKit
 
-class HourlyViewCell: UICollectionViewCell {
+class HourlyViewCellModel: UICollectionViewCell {
     
-    static let reusedId = "HourlyViewCell"
+    static let reusedId = "HourlyViewCellModel"
     
     var icon: String?
     var hour: String?
@@ -52,7 +52,7 @@ class HourlyViewCell: UICollectionViewCell {
         
         hourLabel.text = hour
         temperatureLabel.text = temperature
-        if let icon = icon, icon != ""{
+        if let icon = icon, icon != "" {
             imageView.image = UIImage(named: icon)
         }
     }

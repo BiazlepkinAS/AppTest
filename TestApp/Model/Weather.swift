@@ -36,13 +36,14 @@ struct Daily: Codable {
     let temp: Temp
     let weather: [WeatherAPI]
 }
+
 struct WeatherAPI: Codable {
     let id: Int?
     let main: String
     let description: String
     let icon: String
-    
 }
+
 struct Rain: Codable {
     let forLastHour: Double?
     
@@ -50,6 +51,8 @@ struct Rain: Codable {
         case forLastHour = "1h"
     }
 }
+
 struct Temp: Codable {
     let min, max: Double
 }
+

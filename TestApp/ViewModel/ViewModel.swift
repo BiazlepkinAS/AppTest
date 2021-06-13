@@ -1,4 +1,3 @@
-
 import Foundation
 import CoreLocation
 
@@ -12,13 +11,14 @@ class ViewModel {
     
     weak var viewModelDelegate: ViewModelDelegate?
     var weather: Weather
-    private var dataHasResived = false
+    private var dataHasReceived = false
     
     init(weather: Weather) {
         self.weather = weather
     }
-    func getWeatherFromCash() {
-        DataHandler.getWeatherFromCash { [weak self] (weather) in
+    
+    func getWeatherFromCache() {
+        DataHandler.getWeatherFromCashe { [weak self] (weather) in
             guard let self = self else {return}
             self.viewModelDelegate?.useData(weather)
         }
@@ -26,17 +26,19 @@ class ViewModel {
 }
 
 extension ViewModel: LocationDelegate {
+    
     func getWeather(latitude: CLLocationDegrees, longitude: CLLocationDegrees) {
         
-        switch dataHasResived {
+        switch dataHasReceived {
         case false:
-            DataHandler.getData(latitude: latitude, longitude: longitude) { [weak self] (weather, error ) in
+            DataHandler.getData(latitude: latitude, longitude: longitude) { [weak self] (weather, error) in
                 
                 switch error {
                 case nil:
-                    self?.dataHasResived = true
-                    guard let weather = weather else { return }
+                    self?.dataHasReceived = true
+                    guard let weather = weather else {return}
                     self?.viewModelDelegate?.updateData(weather)
+                    
                 default:
                     print(String(describing: error?.localizedDescription))
                 }
