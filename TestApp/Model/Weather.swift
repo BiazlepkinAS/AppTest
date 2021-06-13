@@ -33,7 +33,7 @@ struct Hourly: Codable {
 
 struct Daily: Codable {
     let dt: Int
-    let temp: Double
+    let temp: Temp
     let weather: [WeatherAPI]
 }
 struct WeatherAPI: Codable {
