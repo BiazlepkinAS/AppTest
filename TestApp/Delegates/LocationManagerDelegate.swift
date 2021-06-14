@@ -26,6 +26,7 @@ class LocationManagerDelegate: NSObject, CLLocationManagerDelegate {
         case .denied, .restricted:
             guard let delegate = locationDelegate as? UIViewController else { return }
             Alert.locationServiceIsDesable(delegate)
+        case .authorizedAlways, .authorizedWhenInUse:
             break
         @unknown default:
             break
