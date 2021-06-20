@@ -2,6 +2,7 @@
 import UIKit
 
 class TableViewDataSource: NSObject, UITableViewDataSource {
+    
     var viewModel: ViewModel?
     var tableView: UITableView?
     
@@ -10,7 +11,7 @@ class TableViewDataSource: NSObject, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         sections.count
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch sections[section] {
         case .firstSection:

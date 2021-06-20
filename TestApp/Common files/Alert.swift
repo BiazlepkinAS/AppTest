@@ -2,7 +2,7 @@
 import UIKit
 
 struct Alert {
-
+    
     static func locationServiceIsDesable(_ sender: UIViewController) {
         
         let title = "Location Service are DISABLE"

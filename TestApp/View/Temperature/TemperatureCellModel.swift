@@ -6,5 +6,4 @@ struct TemperatureCellModel:  TableViewCellModel{
     func set(_ cell: TemperatureCell) {
         cell.temperature = temperature
     }
-    
 }

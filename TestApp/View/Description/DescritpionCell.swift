@@ -3,13 +3,12 @@ import UIKit
 
 class DescriptionCell: UITableViewCell {
     
-    
     static let reusedID = "DescriptionCell"
     
     var descritpionText: String?
     
     private let descriptionLabel: UILabel = {
-       let label = UILabel()
+        let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 22)
         label.textColor = .secondarySystemBackground
         label.textAlignment = .left
@@ -37,7 +36,4 @@ class DescriptionCell: UITableViewCell {
     override func draw(_ rect: CGRect) {
         descriptionLabel.text = descritpionText
     }
-    
-    
-    
 }

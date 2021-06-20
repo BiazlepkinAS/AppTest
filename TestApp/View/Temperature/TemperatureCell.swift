@@ -25,7 +25,6 @@ class TemperatureCell: UITableViewCell {
         temperatureLabel.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         temperatureLabel.topAnchor.constraint(equalTo: topAnchor, constant: 30).isActive = true
         
-        
     }
     
     required init?(coder: NSCoder) {

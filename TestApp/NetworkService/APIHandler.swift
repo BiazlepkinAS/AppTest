@@ -19,7 +19,6 @@ struct APIHandler {
             .build()
         
         guard let url = optURL else {return}
-    
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             switch error {
             case nil:

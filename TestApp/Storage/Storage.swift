@@ -4,7 +4,6 @@ import Foundation
 struct Storage {
     
     static let urls = FileManager.default.urls(for: .libraryDirectory, in: .allDomainsMask)
-    
     static func save(data: Data, fileName: String) {
         guard let url =  urls.first?.appendingPathComponent(fileName) else { return }
         do {

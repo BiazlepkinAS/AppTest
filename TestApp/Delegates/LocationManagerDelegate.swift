@@ -5,7 +5,6 @@ import CoreLocation
 protocol LocationDelegate: class {
     func getWeather(latitude: CLLocationDegrees, longitude: CLLocationDegrees)
 }
-
 class LocationManagerDelegate: NSObject, CLLocationManagerDelegate {
     
     private let locationManager = CLLocationManager()
@@ -35,9 +34,4 @@ class LocationManagerDelegate: NSObject, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Failed to get location", error)
     }
-    
-    
-    
-    
 }
-

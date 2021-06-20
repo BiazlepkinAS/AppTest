@@ -51,7 +51,6 @@ class DayliCell: UITableViewCell {
         tempMinLabel.anchor(top: topAnchor, left: nil, bottom: nil, right: rightAnchor, paddingTop: 5, paddingLeft: 0, paddingBottom: 0, paddingRight: 5, width: 40, height: 40)
         
         tempMaxLabel.anchor(top: topAnchor, left: nil, bottom: nil, right: tempMinLabel.leftAnchor, paddingTop: 5, paddingLeft: 0, paddingBottom: 0, paddingRight: 10, width: 40, height: 40)
-    
     }
     
     required init?(coder: NSCoder) {
@@ -65,5 +64,4 @@ class DayliCell: UITableViewCell {
             weatherImageView.image = UIImage(named: icon)
         }
     }
-
 }

@@ -25,10 +25,9 @@ struct DataHandler {
             }
         }
     }
-
+    
     static func getWeatherFromCashe (completion: @escaping (Weather) -> Void) {
         guard let dataFromFile = Storage.read(fileName: Constants.fileName) else { return }
-        
         do {
             let weatherData = try JSONDecoder().decode(Weather.self, from: dataFromFile)
             DispatchQueue.main.async {
