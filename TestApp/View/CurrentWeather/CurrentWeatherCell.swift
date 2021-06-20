@@ -31,7 +31,7 @@ class CurrentWeatherCell: UITableViewCell {
     
     private let leftTopLabel: UILabel = {
        let label = UILabel()
-        label.textColor = .white
+        label.textColor = .secondarySystemBackground
         label.textAlignment = .left
         label.font = UIFont.systemFont(ofSize: 14, weight: .thin)
         
@@ -41,7 +41,7 @@ class CurrentWeatherCell: UITableViewCell {
     private let leftBottomLabel: UILabel = {
        let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 26)
-        label.textColor = .white
+        label.textColor = .secondarySystemBackground
         label.textAlignment = .left
         
         return label
@@ -50,7 +50,7 @@ class CurrentWeatherCell: UITableViewCell {
     private let rightTopLAbel: UILabel = {
        let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 14, weight: .thin)
-        label.textColor = .white
+        label.textColor = .secondarySystemBackground
         label.textAlignment = .left
         
         return label
@@ -59,7 +59,7 @@ class CurrentWeatherCell: UITableViewCell {
     private let rightBottomLabel: UILabel = {
        let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 26)
-        label.textColor = .white
+        label.textColor = .secondarySystemBackground
         label.textAlignment = .left
         
         return label

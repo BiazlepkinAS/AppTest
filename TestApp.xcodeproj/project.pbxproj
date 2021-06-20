@@ -65,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0900AB4F267C47A80073AD12 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0962B7BF2676607900452F16 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		0962B7C12676844E00452F16 /* SectionCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCategory.swift; sourceTree = "<group>"; };
 		0962B7C32676852000452F16 /* TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDelegate.swift; sourceTree = "<group>"; };
@@ -79,7 +80,6 @@
 		09EE731726681AC000AA3880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09EE731926681AC300AA3880 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09EE731C26681AC300AA3880 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		09EE731E26681AC300AA3880 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09EE732326681AC300AA3880 /* TestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09EE732726681AC300AA3880 /* TestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppTests.swift; sourceTree = "<group>"; };
 		09EE732926681AC300AA3880 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -186,10 +186,10 @@
 				09EE7358266EA3D900AA3880 /* Delegates */,
 				09EE731226681AC000AA3880 /* SceneDelegate.swift */,
 				09EE731026681AC000AA3880 /* AppDelegate.swift */,
-				09EE731E26681AC300AA3880 /* Info.plist */,
 				09EE731B26681AC300AA3880 /* LaunchScreen.storyboard */,
 				09EE731926681AC300AA3880 /* Assets.xcassets */,
 				09EE731626681AC000AA3880 /* Main.storyboard */,
+				0900AB4F267C47A80073AD12 /* Info.plist */,
 			);
 			path = TestApp;
 			sourceTree = "<group>";
@@ -215,11 +215,11 @@
 		09EE73442669525E00AA3880 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				099DDFF1267642D5002A2219 /* Hourly */,
 				09EE7370267290CA00AA3880 /* Description */,
-				09EE736B266FFF5000AA3880 /* TodayWeather */,
-				09EE7366266FF59A00AA3880 /* Daily */,
 				09EE735D266F234F00AA3880 /* Temperature */,
+				09EE736B266FFF5000AA3880 /* TodayWeather */,
+				099DDFF1267642D5002A2219 /* Hourly */,
+				09EE7366266FF59A00AA3880 /* Daily */,
 				09EE73752672959700AA3880 /* CurrentWeather */,
 				09EE731426681AC000AA3880 /* MainViewController.swift */,
 				09EE73402669523A00AA3880 /* TodayViewController.swift */,
@@ -598,7 +598,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -653,7 +653,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -678,7 +678,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Freelance.TestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -697,7 +697,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Freelance.TestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

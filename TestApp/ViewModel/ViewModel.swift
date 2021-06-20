@@ -1,7 +1,7 @@
 import Foundation
 import CoreLocation
 
-protocol ViewModelDelegate: class {
+protocol ViewModelDelegate: AnyObject {
     
     func useData(_ data: Weather)
     func updateData(_ data: Weather)

@@ -37,5 +37,4 @@ class URLBuilder {
     func build() -> URL? {
         return self.components.url
     }
-    
 }
