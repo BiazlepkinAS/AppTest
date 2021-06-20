@@ -1,13 +1,6 @@
-//
-//  AppDelegate.swift
-//  TestApp
-//
-//  Created by Andrei Bezlepkin on 2.06.21.
-//
 
 import UIKit
-
-@main
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 

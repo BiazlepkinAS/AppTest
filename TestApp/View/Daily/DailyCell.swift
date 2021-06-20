@@ -11,32 +11,30 @@ class DayliCell: UITableViewCell {
     var tempMin: String?
     
     private let weekDayLabel: UILabel = {
-       let label = UILabel()
+        let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 22)
-        label.textColor = UIColor(named: "DarkMode")
+        label.textColor = .secondarySystemBackground
         label.textAlignment = .left
-        
         return label
     }()
+    
     private let tempMaxLabel: UILabel = {
-       let label = UILabel()
+        let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 22)
-        label.textColor = UIColor(named: "DarkMode")
+        label.textColor = .secondarySystemBackground
         label.textAlignment = .left
-        
         return label
     }()
     
     private let tempMinLabel: UILabel = {
-       let label = UILabel()
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 22)
         label.textColor = .lightText
         label.textAlignment = .left
-        
         return label
     }()
-
-    private let weatherImageView = UIImageView()
     
+    private let weatherImageView = UIImageView()
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         backgroundColor = .clear

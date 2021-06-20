@@ -18,9 +18,8 @@ struct DataHandler {
                         completion(weatherData, nil)
                     }
                 } catch let jsonError {
-                    print("Failed to decode JSON", jsonError)
+                    print("Failed to decode JSON ", jsonError)
                 }
-                
             default:
                 completion(nil, error)
             }

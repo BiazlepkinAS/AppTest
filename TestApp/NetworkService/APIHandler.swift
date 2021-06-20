@@ -14,12 +14,12 @@ struct APIHandler {
             .set(path: Constants.path + "onecall")
             .addQueryItem(name: "lat", value: "\(latitude)")
             .addQueryItem(name: "lon", value: "\(longitude)")
-            .addQueryItem(name: "units", value: "\(Constants.metricFormat)")
-            .addQueryItem(name: "appid", value: "\(Constants.apiKey)")
+            .addQueryItem(name: "units", value: Constants.metricFormat)
+            .addQueryItem(name: "appid", value: Constants.apiKey)
             .build()
         
         guard let url = optURL else {return}
-        
+    
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             switch error {
             case nil:
@@ -28,7 +28,6 @@ struct APIHandler {
                 if alertHasShow == false {
                     guard let viewController = viewController else {return}
                     DispatchQueue.main.async {
-                        // TODO: write Alert
                         Alert.noInternetConnection(viewController)
                         alertHasShow = true
                     }

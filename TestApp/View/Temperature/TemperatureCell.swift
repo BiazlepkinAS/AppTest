@@ -9,7 +9,7 @@ class TemperatureCell: UITableViewCell {
     private let temperatureLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 60, weight: .thin)
-        label.textColor = .secondaryLabel
+        label.textColor = .secondarySystemBackground
         label.textAlignment = .center
         return label
     }()
@@ -24,6 +24,7 @@ class TemperatureCell: UITableViewCell {
         temperatureLabel.translatesAutoresizingMaskIntoConstraints = false
         temperatureLabel.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         temperatureLabel.topAnchor.constraint(equalTo: topAnchor, constant: 30).isActive = true
+        
         
     }
     

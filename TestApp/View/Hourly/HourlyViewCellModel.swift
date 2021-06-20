@@ -10,25 +10,30 @@ class HourlyViewCellModel: UICollectionViewCell {
     var temperature: String?
     
     let hourLabel: UILabel = {
-       let label = UILabel()
+        let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 20)
         label.textColor = UIColor(named: "DarkMode")
         
         return label
     }()
+    
     private let imageView = UIImageView()
     
     let temperatureLabel: UILabel = {
-       let label = UILabel()
+        let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 20)
-        label.textColor = UIColor(named: "DarkMode")
-        
+        label.textColor = .secondarySystemBackground
         return label
     }()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
         backgroundColor = .clear
+        
+        addSubview(hourLabel)
+        addSubview(imageView)
+        addSubview(temperatureLabel)
         
         hourLabel.translatesAutoresizingMaskIntoConstraints = false
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -40,7 +45,7 @@ class HourlyViewCellModel: UICollectionViewCell {
         imageView.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         temperatureLabel.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
         temperatureLabel.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-
+        
     }
     
     required init?(coder: NSCoder) {
@@ -51,9 +56,9 @@ class HourlyViewCellModel: UICollectionViewCell {
         super.draw(rect)
         
         hourLabel.text = hour
-        temperatureLabel.text = temperature
         if let icon = icon, icon != "" {
             imageView.image = UIImage(named: icon)
         }
+        temperatureLabel.text = temperature
     }
 }
