@@ -11,13 +11,13 @@ class TodayViewController: UIViewController {
         return bgvImage
     }()
     private let locationLabel: UILabel = {
-       let label = UILabel()
+        let label = UILabel()
         label.textColor = .secondarySystemBackground
         label.font = UIFont.systemFont(ofSize: 35)
         return label
     }()
     private let descriptionLabel: UILabel = {
-       let label = UILabel()
+        let label = UILabel()
         label.textColor = .secondarySystemBackground
         label.text = ""
         return label
@@ -48,10 +48,9 @@ class TodayViewController: UIViewController {
         super.loadView()
         view = backGroundView
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let weatherData = Weather(lat: 0.0, lon: 0.0, timezone: " ", current: nil, hourly: nil, daily: nil)
         viewModel = ViewModel(weather: weatherData)
         viewModel.viewModelDelegate = self
@@ -60,7 +59,6 @@ class TodayViewController: UIViewController {
         
         configureLocationManager()
         APIHandler.viewController = self
-        
     }
     private func configureLocationManager() {
         locationManagerDelegate = LocationManagerDelegate()
@@ -69,7 +67,6 @@ class TodayViewController: UIViewController {
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         locationManagerDelegate?.locationDelegate = self.viewModel
-        
     }
     private func configure() {
         view.addSubview(locationLabel)
@@ -88,7 +85,6 @@ class TodayViewController: UIViewController {
         tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
-
     }
     private func configureTableView() {
         view.addSubview(tableView)
@@ -115,9 +111,7 @@ class TodayViewController: UIViewController {
         tableView.register(DayliCell.self, forCellReuseIdentifier: DayliCell.reusedId)
         tableView.register(DescriptionCell.self, forCellReuseIdentifier: DescriptionCell.reusedID)
         tableView.register(CurrentWeatherCell.self, forCellReuseIdentifier: CurrentWeatherCell.reusedId)
-        
     }
-
 }
 extension TodayViewController: ViewModelDelegate {
     func useData(_ data: Weather) {
@@ -126,7 +120,6 @@ extension TodayViewController: ViewModelDelegate {
         configureTableView()
         tableView.reloadData()
     }
-    
     func updateData(_ data: Weather) {
         viewModel = ViewModel(weather: data)
         configure()

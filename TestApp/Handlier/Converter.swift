@@ -75,7 +75,6 @@ struct Converter {
         return (city, description, temperature, sunriseTime, sunsetTime, humidity, precipitation, windSpeed, feelsLike, pressure, visibility, uvindex, cloudiness)
     }
     
-    
     static func convert(_ hourly: Hourly) -> (hour: String, temperature: String, icon: String) {
         
         let unixTime = hourly.dt

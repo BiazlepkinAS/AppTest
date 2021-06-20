@@ -2,10 +2,9 @@
 import UIKit
 
 class HourlyVeiw: UIView {
-
+    
     private let collectionView: UICollectionView
     private var viewModel: ViewModel
-    
     private let headerViewHight = CGFloat(120)
     
     init(viewModel: ViewModel) {
@@ -19,6 +18,7 @@ class HourlyVeiw: UIView {
         collectionView = UICollectionView(frame: frame, collectionViewLayout: layout)
         collectionView.showsHorizontalScrollIndicator = false
         super.init(frame: CGRect(x: 0.0, y: 0.0, width: UIScreen.main.bounds.width, height: headerViewHight))
+        
         addSubview(collectionView)
         collectionView.backgroundColor = .clear
         collectionView.dataSource = self
@@ -47,7 +47,6 @@ extension HourlyVeiw: UICollectionViewDataSource {
             }
             let temperature = Converter.convert(viewModel).temperature
             cell.temperature = temperature
-            
         default:
             if let hourlyArray = viewModel.weather.hourly {
                 let hourly = hourlyArray[indexPath.item]
@@ -60,5 +59,3 @@ extension HourlyVeiw: UICollectionViewDataSource {
         return cell
     }
 }
-
-

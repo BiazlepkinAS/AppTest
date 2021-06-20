@@ -21,8 +21,8 @@ class TableViewDelegate: NSObject, UITableViewDelegate {
         case .firstSection:
             return nil
         case .secondSection:
-        guard let viewModel = viewModel else { return nil }
-        return HourlyVeiw(viewModel: viewModel)
+            guard let viewModel = viewModel else { return nil }
+            return HourlyVeiw(viewModel: viewModel)
         }
     }
     
@@ -74,9 +74,8 @@ class TableViewDelegate: NSObject, UITableViewDelegate {
         }
     }
     
-    
     func changeTransparency(of cell: UITableViewCell, offset: CGFloat) {
-    
+        
         if offset <= 100 {
             cell.alpha = 1.0 - (offset / 100)
         } else {
@@ -92,9 +91,4 @@ class TableViewDelegate: NSObject, UITableViewDelegate {
         cell.layer.mask = gradientLayer
         cell.layer.masksToBounds = true
     }
-    
-    
-    
-    
 }
-

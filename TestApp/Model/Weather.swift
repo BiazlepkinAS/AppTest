@@ -55,4 +55,3 @@ struct Rain: Codable {
 struct Temp: Codable {
     let min, max: Double
 }
-
